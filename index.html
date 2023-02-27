@@ -29,12 +29,118 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="HanyJie&#039;s garden" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-02-27T12:44:39.000Z" title="2023/2/27 下午8:44:39">2023-02-27</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-02-27T13:03:07.363Z" title="2023/2/27 下午9:03:07">2023-02-27</time></span><span class="level-item">a few seconds read (About 34 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/02/27/test/">test</a></p><div class="content"><p>This is a test artical</p>
-<img src="/2023/02/27/test/test.png" class="" title="图片引用方法一"> 
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="HanyJie&#039;s garden" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-02-27T12:44:39.000Z" title="2023/2/27 下午8:44:39">2023-02-27</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-02-27T13:15:31.940Z" title="2023/2/27 下午9:15:31">2023-02-27</time></span><span class="level-item">8 minutes read (About 1240 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/02/27/test/">test</a></p><div class="content"><h2 id="第一章-Verilog语言和Vivado初步使用"><a href="#第一章-Verilog语言和Vivado初步使用" class="headerlink" title="第一章 Verilog语言和Vivado初步使用"></a>第一章 Verilog语言和Vivado初步使用</h2><blockquote>
+<p>在这一章我将总结Verilog语言的基本语法，并对Vivado软件使用进行说明。</p>
+</blockquote>
+<h3 id="1-1-Verilog基本结构"><a href="#1-1-Verilog基本结构" class="headerlink" title="1.1 Verilog基本结构"></a>1.1 Verilog基本结构</h3><h4 id="1-1-1-简单的组合逻辑实例"><a href="#1-1-1-简单的组合逻辑实例" class="headerlink" title="1.1.1 简单的组合逻辑实例"></a>1.1.1 简单的组合逻辑实例</h4><p>下面以一个简单的组合逻辑来说明Verilog的基本结构</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">module</span> AND(a, b, out);</span><br><span class="line">    <span class="keyword">output</span>[<span class="number">3</span>:<span class="number">0</span>] out;     <span class="comment">// 4位输出 </span></span><br><span class="line">    <span class="keyword">input</span> [<span class="number">3</span>:<span class="number">0</span>] a, b;    <span class="comment">// 4位输入a, b</span></span><br><span class="line">    <span class="keyword">assign</span> out = a &amp; b;  <span class="comment">// out &lt;- a &amp; b</span></span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/test/test.png" alt="test"></p>
-<p><img src="/test/969d71e6-2126-4313-a5d7-9a28ebc78837.jpg" alt="969d71e6-2126-4313-a5d7-9a28ebc78837"></p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-02-26T09:23:24.729Z" title="2023/2/26 下午5:23:24">2023-02-26</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-02-26T09:23:24.729Z" title="2023/2/26 下午5:23:24">2023-02-26</time></span><span class="level-item">a minute read (About 123 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/02/26/hello-world/">Hello World</a></p><div class="content"><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<p>从模块的声明开始，最开始的<strong>关键词</strong>为<code>module</code>，<strong>模块名</strong>为<code>AND</code>，<strong>模块结束</strong>的关键词为<code>endmodule</code>。除了以上写法还有一种颇为常见的写法如下：</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">module</span> AND (</span><br><span class="line">    <span class="keyword">output</span>[<span class="number">3</span>:<span class="number">0</span>] out,</span><br><span class="line">    <span class="keyword">input</span> [<span class="number">3</span>:<span class="number">0</span>] a, b,</span><br><span class="line">);</span><br><span class="line">    <span class="keyword">assign</span> out = a &amp; b;</span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="1-1-2-简单的时序逻辑实例"><a href="#1-1-2-简单的时序逻辑实例" class="headerlink" title="1.1.2 简单的时序逻辑实例"></a>1.1.2 简单的时序逻辑实例</h4><p>下面介绍一个简单的时序逻辑，时序逻辑比组合逻辑复杂且要考虑的的东西更多。</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">module</span> fenpin (</span><br><span class="line">	<span class="keyword">input</span> clk_in,</span><br><span class="line">    <span class="keyword">output</span> clk_out</span><br><span class="line">);</span><br><span class="line">    <span class="keyword">reg</span> c_out = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">assign</span> clk_out = c_out;</span><br><span class="line">    <span class="keyword">always</span> @ (<span class="keyword">posedge</span> clk_in) <span class="keyword">begin</span></span><br><span class="line">        c_out = ~c_out;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+
+<p>上述时序逻辑的时序图如下：</p>
+<p><img src="/test/2383321-20220806101310863-1465708739.png" alt="img"></p>
+<p>​     Verilog HDL不同于我们常见的C语言，<code>clk_out = c_out</code>是建立了一种电路上的连接，将<code>c_out</code>的值输出到<code>clk_out</code>中，不仅仅是在<code>assign clk_out = c_out</code>这个赋值语句发生时才进行，而是之后无论<code>c_out</code>变为何值<code>clk_out</code>都要为之改变。为了更好的描述这层关系，用如下电路图来表示上面这段代码。</p>
+<p><img src="/test/2383321-20220806101348339-1605427494.png" alt="img"></p>
+<p>​      可以看到<code>c_out</code>和<code>clk_out</code>的确建立了永久性的连接，而不是在语句结束后就释放这种连接，这点是要和C语言或者其他语言区别开的，不能忘记HDL是用来描述电路的。</p>
+<h4 id="1-1-3-Verilog-HDL结构要求"><a href="#1-1-3-Verilog-HDL结构要求" class="headerlink" title="1.1.3 Verilog HDL结构要求"></a>1.1.3 Verilog HDL结构要求</h4><p>在编写Verilog代码的时候需要注意以下几点</p>
+<ol>
+<li>模块的时序逻辑部分在<code>always</code>块的内部，在<code>always</code>块的内部只能对<strong>寄存器变量</strong>进行赋值。</li>
+<li>模块中对端口或其他<code>wire</code>型变量的赋值，必须在<code>always</code>块的外部使用<code>assign</code>语句，通常是将寄存器的值送出。</li>
+</ol>
+<hr>
+<h3 id="1-2-数据类型及变量、常量"><a href="#1-2-数据类型及变量、常量" class="headerlink" title="1.2 数据类型及变量、常量"></a>1.2 数据类型及变量、常量</h3><p><code>     Verilog HDL</code>中有两种常见的数据类型<strong>线网类型</strong>和<strong>变量类型</strong>。对于线网类型我们主要介绍<code>wire</code>型，对于变量类型则主要介绍<code>reg</code>型。</p>
+<h4 id="1-2-1-逻辑值与常量"><a href="#1-2-1-逻辑值与常量" class="headerlink" title="1.2.1 逻辑值与常量"></a>1.2.1 逻辑值与常量</h4><p><strong>逻辑值</strong></p>
+<table>
+<thead>
+<tr>
+<th>逻辑值</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$0$</td>
+<td>逻辑0</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>逻辑1</td>
+</tr>
+<tr>
+<td>$x$</td>
+<td>逻辑值未知</td>
+</tr>
+<tr>
+<td>$z$</td>
+<td>高阻态</td>
+</tr>
+</tbody></table>
+<p><strong>常量表示方法</strong></p>
+<table>
+<thead>
+<tr>
+<th>表达方式</th>
+<th>说明</th>
+<th>举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&lt;位宽&gt;&#39;&lt;进制&gt;&lt;数字&gt;</code></td>
+<td>完整的表达方式</td>
+<td>&#96;4’b0101</td>
+</tr>
+<tr>
+<td><code>&lt;进制&gt;&lt;数字&gt;</code></td>
+<td>缺省位宽，位宽由<strong>机器决定</strong>，最小是32位</td>
+<td><code>h05</code></td>
+</tr>
+<tr>
+<td><code>&lt;数字&gt;</code></td>
+<td>缺省进制则默认为10进制，位宽默认为32位</td>
+<td><code>5</code></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>📢说明：</p>
+<ol>
+<li><code>4&#39;h5</code>和<code>4&#39;b0101</code>实质上是等价的只是采用了不同进制的表示方法</li>
+<li><code>8&#39;h2x</code>表示为八位二进制数时<code>8&#39;b0010xxxx</code></li>
+</ol>
+</blockquote>
+<h4 id="1-2-2-线网型wire"><a href="#1-2-2-线网型wire" class="headerlink" title="1.2.2 线网型wire"></a>1.2.2 线网型wire</h4><p><img src="/test/2383321-20220807223610994-272448949.png" alt="img"></p>
+<p>​    1.1节的例子中<code>clk_in</code>和<code>clk_out</code>变量是<code>wire</code>类型，如果没有接触过Verilog HDL对这个类型会感到很不适应，可以先这样想<code>wire</code>类型就是电路中的一条线，可以随着端口的改变而改变电线中的逻辑值，之后进行项目设计的时候会对这些变量有更深刻的理解。</p>
+<p><strong>给出<code>wire</code>型变量的两种定义方法：</strong></p>
+<ol>
+<li><code>wire[7:0] a, b, c;  // 定义了三个位宽为8位的wire型变量</code></li>
+<li><code>wire d  //定义了一个1位的wire</code></li>
+</ol>
+<h4 id="1-2-3-寄存器型reg"><a href="#1-2-3-寄存器型reg" class="headerlink" title="1.2.3 寄存器型reg"></a>1.2.3 寄存器型reg</h4><p><img src="/test/2383321-20220807223626417-1503927293.png" alt="img"></p>
+<p>​      当定义一个<code>reg</code>类型就相当于使用了一个D触发器，只有在时钟有效边沿到来时，保存的值才能改变。</p>
+<p><strong>给出<code>reg</code>型变量的两种定义方法：</strong></p>
+<ol>
+<li><code>reg[7:0] a, b, c;  // 定义了三个位宽为8位的reg型变量</code></li>
+<li><code>reg d  //定义了一个1位的reg</code></li>
+</ol>
+<h4 id="1-2-4-符号常量"><a href="#1-2-4-符号常量" class="headerlink" title="1.2.4 符号常量"></a>1.2.4 符号常量</h4><p>​      如果使用关键字<code>parameter</code>来定义一个标识符来代表一个常量，这个常量就被成为符号常量。</p>
+<p>例如：<code>parameter width = 3;</code>将程序中的所有<code>width</code>用3替换。</p>
+<p>调用模块的时候也可以改变<code>parameter</code>常量的值</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">module</span> add(sum, a, b);</span><br><span class="line">    <span class="keyword">parameter</span> time_dl = <span class="number">5</span>, time_cnt = <span class="number">10</span>;</span><br><span class="line">    ...</span><br><span class="line"><span class="keyword">endmodule</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">module</span> top;</span><br><span class="line">    <span class="keyword">wire</span>[<span class="number">2</span>:<span class="number">0</span>] a1, b1;</span><br><span class="line">    <span class="keyword">wire</span>[<span class="number">3</span>:<span class="number">0</span>] a2, b2, sum1;</span><br><span class="line">    <span class="keyword">wire</span>[<span class="number">4</span>:<span class="number">0</span>] sum2;</span><br><span class="line">    add # (<span class="number">4</span>, <span class="number">3</span>) AD1(sum1, a1, b1);  <span class="comment">//使time_dl=4,time_cnt=8</span></span><br><span class="line">    add # (<span class="number">12</span>)   AD2(sum2, a2, b2);  <span class="comment">//time_dl=12,time_cnt=10</span></span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="1-2-5-存储器型变量"><a href="#1-2-5-存储器型变量" class="headerlink" title="1.2.5 存储器型变量"></a>1.2.5 存储器型变量</h4><p>​      存储器其实就是一个寄存器数组，我们写MIPS CPU的时候接触过寄存器堆，其实就是这个。可以使用如下方法定义</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">reg</span> [msb:lsb] mem[upper1:lower1]</span><br></pre></td></tr></table></figure>
+
+<p>例如：</p>
+<ol>
+<li><code>reg[3:0] mem1[63:0];  // 定义了64个4位寄存器组</code></li>
+<li><code>reg mem2[5:1]; // 定义了5个1位的寄存器组 </code></li>
+<li><code>mem2[4] = 1;  // 对其中1位的寄存器赋值</code></li>
+<li><code>mem2[1:5] = 0;  // 对存储器大范围赋值，速度很快</code></li>
+</ol>
+<hr>
+<h3 id="1-3-运算符"><a href="#1-3-运算符" class="headerlink" title="1.3 运算符"></a>1.3 运算符</h3></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-02-26T09:23:24.729Z" title="2023/2/26 下午5:23:24">2023-02-26</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-02-26T09:23:24.729Z" title="2023/2/26 下午5:23:24">2023-02-26</time></span><span class="level-item">a minute read (About 123 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2023/02/26/hello-world/">Hello World</a></p><div class="content"><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
